@@ -18,6 +18,7 @@ module EckmannHilton where
   variable
     A : Type ℓ
 
+  -- Whiskering
   _·ᵣ_ : ∀ {a b c : A} {p q : a ≡ b} → (α : p ≡ q) → (r : b ≡ c) → p · r ≡ q · r
   α ·ᵣ refl = ((𝟙ᵣ ⁻¹) · α) · 𝟙ᵣ
 

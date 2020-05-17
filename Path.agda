@@ -5,7 +5,7 @@ module Path where
   open import Function using (id; _∘_)
   import Relation.Binary.PropositionalEquality as Eq
   open Eq public using (_≡_; refl)
-  open Eq.≡-Reasoning public using (begin_; _≡⟨⟩_; _≡⟨_⟩_; _∎)
+  open Eq.≡-Reasoning public using (begin_; step-≡; _∎)
   open import Data.Product
 
   private
